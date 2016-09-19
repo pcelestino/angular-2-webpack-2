@@ -2,7 +2,11 @@
   "name": "angular-2-webpack-2",
   "version": "0.0.1",
   "description": "Projeto inicial do Angular 2",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pcelestino/angular-2-webpack-2.git"
+  },
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run serve\" \"npm run browser\" ",
     "build": "webpack --progress",
