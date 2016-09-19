@@ -1,0 +1,37 @@
+{
+  "name": "angular-2-webpack-2",
+  "version": "0.0.1",
+  "description": "Projeto inicial do Angular 2",
+  "license": "ISC",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run serve\" \"npm run browser\" ",
+    "build": "webpack --progress",
+    "build:prod": "webpack -p --progress",
+    "serve": "webpack-dev-server --inline --progress",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "browser": "open http://localhost:8080/"
+  },
+  "dependencies": {
+    "@angular/common": "^2.0.0",
+    "@angular/compiler": "^2.0.0",
+    "@angular/core": "^2.0.0",
+    "@angular/http": "^2.0.0",
+    "@angular/platform-browser": "^2.0.0",
+    "@angular/platform-browser-dynamic": "^2.0.0",
+    "@angular/router": "^3.0.0",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.0-beta.12",
+    "zone.js": "^0.6.23"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.32",
+    "concurrently": "^2.2.0",
+    "html-webpack-plugin": "^2.22.0",
+    "ts-loader": "^0.8.2",
+    "typescript": "^2.0.2",
+    "webpack": "^2.1.0-beta.22",
+    "webpack-dev-server": "^2.1.0-beta.4"
+  }
+}
